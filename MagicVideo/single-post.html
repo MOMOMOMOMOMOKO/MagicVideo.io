@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Magic Video</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/light-box.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="index.html">ByteDance</a>
+        </div>
+      <div class="menu-icon">
+        <span></span>
+      </div>
+    </nav>
+
+    <div class="page-heading">
+        <div class="container">
+            <div class="heading-content">
+                <h1>Magic Video</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div class="blog-entries">
+        <div class="container">
+            <div class="col-md-9">
+                <div class="blog-posts">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="single-blog-post">
+                                <img src="img/blog_post_1.png" alt="">
+                                <div class="text-content">
+                                    <h2>Abstract</h2>
+                                    <button style="  background-color: #555555; 
+                                    border: none;
+                                    color: white;
+                                    padding: 15px 32px;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    display: inline-block;
+                                    font-size: 16px;">Click here tor view paper</button>  
+                                    <p>We present an efficient video generation framework
+                                        based on latent diffusion models, termed as MagicVideo.
+                                        Given a text description, MagicVideo is able to generate
+                                        photo-realistic video clips with high relevance to the text
+                                        content. Different from recent diffusion model based video
+                                        generation framework that uses cascaded super-resolution
+                                        pipeline, MagicVideo is able to generate high resolution
+                                        video frames with single model inference. To make the best
+                                        use of the prior knowledge from text-to-image generation
+                                        tasks, we keep most of the convolution operator in 2D space
+                                        and introduce a unique adaptor for each 2D convolution to
+                                        learn the frame specific features. The temporal information
+                                        is learned via a novel directed temporal attention module.
+                                        It is used to capture the relation among frames and generate
+                                        temporally meaningful sequence of frames. The whole gen-
+                                        eration process is within the low dimension latent space of a
+                                        pre-trained variation auto-encoder. This practice speeds up
+                                        the training of the video generation model significantly and
+                                        reduce the sampling time by 80×, compared to traditional
+                                        DDPM based video diffusion models. We demonstrate that
+                                        MagicVideo can generate high spatial resolution video clips
+                                        in a single step without the cascade diffusion pipeline. Mag-
+                                        icVideo is able to generate both realistic video content and
+                                        imaginary content in a photo-realistic style with state-of-
+                                        the-art trade-off in terms of quality and computational cost.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <p>Copyright &copy; ByteDance</p>
+            </div>
+        </div>
+    </footer>
+
+
+      
+
+    
+
+    <section class="overlay-menu">
+      <div class="container">
+        <div class="row">
+          <div class="main-menu">
+              <ul>
+                  <li>
+                      <a href="index.html">Home - Full-width</a>
+                  </li>
+                  <li>
+                      <a href="masonry.html">Home - Masonry</a>
+                  </li>
+                  <li>
+                      <a href="grid.html">Home - Small-width</a>
+                  </li>
+                  <li>
+                      <a href="single-post.html">Single Post</a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
