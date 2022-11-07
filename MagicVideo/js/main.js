@@ -1,73 +1,26 @@
 jQuery(document).ready(function($) {
 
-  const data_list = [
-    {
-      'link':'./img/1.gif',
-      'name': 'image1',
-      'header': 'header1',
-      'text':'input text1'
-    },
-    {
-      'link':'./img/2.gif',
-      'name': 'image2',
-      'header': 'header2',
-      'text':'input text2'
-    },
-    {
-      'link':'./img/3.gif',
-      'name': 'image3',
-      'header': 'header3',
-      'text':'input text3'
-    },
-    {
-      'link':'./img/4.gif',
-      'name': '',
-      'header': '',
-      'text':'hweuqflherqgcrme;xxxxxxxxxxxxxxxxxxxxxxxxawrncaiughfrwvcyaweucyuw f'
-    },
-    {
-      'link':'./img/5.gif',
-      'name': '',
-      'header': '',
-      'text':'input text5'
-    },
-    {
-      'link':'./img/6.gif',
-      'name': 'image6',
-      'header': 'header6',
-      'text':'input text6'
-    },
-    {
-      'link':'./img/7.gif',
-      'name': '',
-      'header': '',
-      'text':'hweuqflherqgcrme;xxxxxxxxxxxxxxxxxxxxxxxxawrncaiughfrwvcyaweucyuw f'
-    },
-    {
-      'link':'./img/8.gif',
-      'name': '',
-      'header': '',
-      'text':'input text8'
-    },
-    {
-      'link':'./img/9.gif',
-      'name': 'image9',
-      'header': 'header9',
-      'text':'input text9'
-    }
-  ]
+
+  fetch("./img/data.json")
+      .then(res => res.json())
+      .then(json => {
+          console.log(json)
+          return json;
+      });
 
 
   for (data of data_list) {
   if (document.getElementById('image-container')!= null){
+    data_list=fetch();
+    console.log(data_list);
     document.getElementById('image-container').innerHTML += `
   
 
     <a href=${data.link} data-lightbox="image-1"><div class="thumb">
         <div class="hover-effect">
             <div class="hover-content">
-                <h1>${data.name} <em>${data.header}</em></h1>
-                <p>${data.text}</p>
+                 <h1 id="onDesktop">${data.name} <em>${data.header}</em></h1>
+                 <p id="onDesktop">${data.text}</p>
             </div>
         </div>
         <div class="image">
@@ -145,3 +98,4 @@ jQuery(document).ready(function($) {
 
 
 });
+
