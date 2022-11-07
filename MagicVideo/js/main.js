@@ -1,18 +1,66 @@
 jQuery(document).ready(function($) {
 
 
-  fetch("./img/data.json")
-      .then(res => res.json())
-      .then(json => {
-          console.log(json)
-          return json;
-      });
+  const data_list = [
+    {
+      'link':'./img/1.gif',
+      'name': 'MagicVideo',
+      'header': '',
+      'text':'A confused grizzly bear in calculus class.'
+    },
+    {
+      'link':'./img/2.gif',
+      'name': 'MagicVideo',
+      'header': '',
+      'text':'A person riding a horse in the sunrise.'
+    },
+    {
+      'link':'./img/3.gif',
+      'name': 'MagicVideo',
+      'header': '',
+      'text':'Coffee pouring into a cup.'
+    },
+    {
+      'link':'./img/4.gif',
+      'name': 'MagicVideo',
+      'header': '',
+      'text':'An astronaut is riding a horse in the space in a photorealistic style'
+    },
+    {
+      'link':'./img/5.gif',
+      'name': 'MagicVideo',
+      'header': '',
+      'text':'Robot dancing in times square'
+    },
+    {
+      'link':'./img/6.gif',
+      'name': 'MagicVideo',
+      'header': '',
+      'text':'Drone flythrough of a tropical jungle covered in snow.'
+    },
+    {
+      'link':'./img/7.gif',
+      'name': 'MagicVideo',
+      'header': '',
+      'text':'A beautiful sunrise on mars, Curiosity rover. High definition, timelapse, dramatic colors.'
+    },
+    {
+      'link':'./img/8.gif',
+      'name': 'MagicVideo',
+      'header': '',
+      'text':'Wooden figurine walking on a treadmill made out of exercise mat'
+    },
+    {
+      'link':'./img/9.gif',
+      'name': 'MagicVideo',
+      'header': '',
+      'text':'Sprouts in the shape of text ’Imagen’ coming out of a fairytale book.'
+    }
+  ]
 
 
   for (data of data_list) {
   if (document.getElementById('image-container')!= null){
-    data_list=fetch();
-    console.log(data_list);
     document.getElementById('image-container').innerHTML += `
   
 
